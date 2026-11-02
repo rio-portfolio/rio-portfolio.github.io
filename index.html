@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Name - Engineering Maker Portfolio</title>
+    <style>
+        /* Base Styling */
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            line-height: 1.6;
+            color: #222;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 40px 20px;
+            background-color: #fcfcfc;
+        }
+
+        /* Header / Bio */
+        header {
+            margin-bottom: 40px;
+            border-bottom: 1px solid #eaeaea;
+            padding-bottom: 20px;
+        }
+
+        h1 {
+            font-size: 2.2rem;
+            margin-bottom: 5px;
+            color: #111;
+        }
+
+        .subtitle {
+            font-size: 1.1rem;
+            color: #555;
+            margin-bottom: 15px;
+        }
+
+        .bio {
+            font-size: 1rem;
+            color: #444;
+            max-width: 750px;
+        }
+
+        /* Technical Skills Tags */
+        .skills-container {
+            margin-top: 15px;
+        }
+
+        .skill-tag {
+            display: inline-block;
+            background: #eee;
+            color: #333;
+            padding: 4px 10px;
+            border-radius: 4px;
+            font-size: 0.85rem;
+            font-weight: 500;
+            margin-right: 6px;
+            margin-bottom: 6px;
+        }
+
+        /* Project Section */
+        .section-title {
+            font-size: 1.5rem;
+            margin-bottom: 20px;
+            color: #111;
+        }
+
+        .project-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 25px;
+        }
+
+        .project-card {
+            background: #fff;
+            border: 1px solid #e1e1e1;
+            border-radius: 8px;
+            overflow: hidden;
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+
+        .project-card:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+        }
+
+        .project-image {
+            width: 100%;
+            height: 180px;
+            object-fit: cover;
+            background-color: #f0f0f0;
+        }
+
+        .project-info {
+            padding: 15px;
+        }
+
+        .project-title {
+            font-size: 1.2rem;
+            margin: 0 0 8px 0;
+            color: #111;
+        }
+
+        .project-description {
+            font-size: 0.9rem;
+            color: #666;
+            margin-bottom: 12px;
+        }
+
+        .project-link {
+            display: inline-block;
+            text-decoration: none;
+            color: #0066cc;
+            font-weight: 600;
+            font-size: 0.9rem;
+        }
+
+        .project-link:hover {
+            text-decoration: underline;
+        }
+
+        /* Footer */
+        footer {
+            margin-top: 60px;
+            text-align: center;
+            font-size: 0.85rem;
+            color: #888;
+            border-top: 1px solid #eaeaea;
+            padding-top: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header / Bio Section -->
+    <header>
+        <h1>Your Name</h1>
+        <div class="subtitle">High School Senior & Aspiring Engineer</div>
+        <p class="bio">
+            I design and build hardware prototypes, embedded systems, and custom mechanisms. 
+            Passionate about solving practical engineering problems through CAD modeling, rapid prototyping, and iterative testing.
+        </p>
+
+        <!-- Technical Tools List -->
+        <div class="skills-container">
+            <span class="skill-tag">Fusion 360</span>
+            <span class="skill-tag">3D Printing</span>
+            <span class="skill-tag">C++ / Arduino</span>
+            <span class="skill-tag">Python</span>
+            <span class="skill-tag">Soldering & Electronics</span>
+        </div>
+    </header>
+
+    <!-- Projects Section -->
+    <main>
+        <h2 class="section-title">Engineering Projects</h2>
+
+        <div class="project-grid">
+
+            <!-- Project 1 Card -->
+            <div class="project-card">
+                <!-- Replace 'https://via.placeholder.com/400x250' with your image link or file name -->
+                <img src="https://via.placeholder.com/400x250" alt="Project 1 Image" class="project-image">
+                <div class="project-info">
+                    <h3 class="project-title">Autonomous Robotics Chassis</h3>
+                    <p class="project-description">
+                        Designed and 3D-printed a custom differential drive robot using Fusion 360 and Arduino. Features ultrasonic obstacle avoidance and optical encoders.
+                    </p>
+                    <a href="#" class="project-link">View Documentation &rarr;</a>
+                </div>
+            </div>
+
+            <!-- Project 2 Card -->
+            <div class="project-card">
+                <img src="https://via.placeholder.com/400x250" alt="Project 2 Image" class="project-image">
+                <div class="project-info">
+                    <h3 class="project-title">Custom PCB Power Monitor</h3>
+                    <p class="project-description">
+                        Designed a circuit schematic in KiCAD and soldered a custom PCB to measure battery voltage levels for microcontrollers with OLED output.
+                    </p>
+                    <a href="#" class="project-link">View Documentation &rarr;</a>
+                </div>
+            </div>
+
+            <!-- Project 3 Card -->
+            <div class="project-card">
+                <img src="https://via.placeholder.com/400x250" alt="Project 3 Image" class="project-image">
+                <div class="project-info">
+                    <h3 class="project-title">Structural Load Testing Rig</h3>
+                    <p class="project-description">
+                        Built a mechanical test fixture to analyze load capacity and failure points of varied 3D-printed infill patterns under tension.
+                    </p>
+                    <a href="#" class="project-link">View Documentation &rarr;</a>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 Your Name. Portfolio built for college engineering admissions.</p>
+    </footer>
+
+</body>
+</html>
